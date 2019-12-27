@@ -22,10 +22,12 @@ steps
 
 {
 
-echo "$env.function"
+if (($env.function)=addition)
+{
+
 
 echo "Starting the project "
-
+}
 }
 
 
