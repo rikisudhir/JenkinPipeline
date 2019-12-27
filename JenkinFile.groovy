@@ -1,4 +1,3 @@
-#!/usr/bin/env groovy
 
 properties([parameters([choice(choices: ['addition', 'subtraction', 'multiplication', 'deletion', '', ' '], description: '', name: 'function'), string(defaultValue: '', description: '', name: '', trim: false)])])
 
