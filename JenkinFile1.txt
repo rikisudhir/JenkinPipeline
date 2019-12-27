@@ -21,8 +21,8 @@ stage('Starting')
 steps
 
 {
-@requiredfucntion= env.function
-echo @requiredfucntion
+requiredfucntion= '${params.function}'
+echo requiredfucntion
 echo "Starting the project "
 
 }
