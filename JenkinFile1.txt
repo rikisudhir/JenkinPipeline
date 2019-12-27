@@ -23,7 +23,7 @@ steps
 {
 
 echo "$env.function"
-echo requiredfucntion
+
 echo "Starting the project "
 
 }
