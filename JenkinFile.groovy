@@ -3,7 +3,7 @@
 
 pipeline
 
-expecteffunction = env.function
+
 
 {
 
