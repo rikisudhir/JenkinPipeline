@@ -23,7 +23,7 @@ steps
 {
 
 echo "Starting the project "
-echo '$env.name'  
+  echo "${env.name}"
 
 }
 
