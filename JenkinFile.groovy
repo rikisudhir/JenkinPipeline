@@ -25,7 +25,7 @@ steps
 
 echo "Starting the project "
   echo "${env.name}"
- @myname = env.name
+ @myname = ${env.name}
   echo "$myname"
 
 
