@@ -3,13 +3,13 @@
 
 pipeline
 
-echo '${env.name}'
+echo "${env.name}"
 
 {
 
 agent any
 
- 
+echo "${env.name}"
 
 stages
 
