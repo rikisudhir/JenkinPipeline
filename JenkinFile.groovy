@@ -9,7 +9,7 @@ pipeline
 
 agent any
 
-echo "${env.name}"
+
 
 stages
 
