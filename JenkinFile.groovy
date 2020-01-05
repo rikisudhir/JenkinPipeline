@@ -3,7 +3,7 @@
 
 pipeline
 
-echo "${env.name}"
+
 
 {
 
