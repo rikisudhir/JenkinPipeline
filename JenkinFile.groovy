@@ -3,7 +3,7 @@
 
 pipeline
 
-
+myname = env.name;
 
 {
 
@@ -23,6 +23,7 @@ steps
 {
 
 echo "Starting the project "
+echo '$myname'  
 
 }
 
