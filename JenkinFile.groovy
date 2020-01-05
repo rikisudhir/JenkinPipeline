@@ -3,7 +3,7 @@
 
 pipeline
 
-myname = env.name
+def myname = env.name
 
 {
 
