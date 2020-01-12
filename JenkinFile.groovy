@@ -18,7 +18,7 @@ stages
 stage('Starting')
 
 {
-
+name = 1
 steps
 
 {
@@ -26,7 +26,6 @@ steps
 echo "Starting the project "
  echo "${env.name}"
  echo "${awesomeVersion}"
- $name = 1
  echo "${name}"
  
  
