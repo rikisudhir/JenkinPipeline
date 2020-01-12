@@ -19,7 +19,8 @@ stage('Starting')
 
 {
 
-
+steps
+ {
 
 echo "Starting the project "
  echo "${env.name}"
@@ -30,7 +31,7 @@ echo "Starting the project "
  
 
 
-
+ }
 
 
 }
