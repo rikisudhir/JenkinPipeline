@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def awesomeVersion = env.name
-def name=''
+def name
 
 pipeline
 
@@ -25,7 +25,7 @@ steps
 echo "Starting the project "
  echo "${env.name}"
  echo "${awesomeVersion}"
- name =1
+ name ="1"
  echo "${name}"
  
  
