@@ -26,7 +26,7 @@ steps
 
 echo "Starting the project "
  echo "${env.name}"
- x = env.name
+ def x = env.name
  echo '$x'
  
 
