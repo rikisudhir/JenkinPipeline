@@ -24,7 +24,7 @@ steps
 
 echo "Starting the project "
  echo "${env.name}"
- echo 'awesomeVersion'
+ echo "${awesomeVersion}"
  
  
 
