@@ -25,7 +25,7 @@ steps
 echo "Starting the project "
  echo "${env.name}"
  echo "${awesomeVersion}"
- def name =1
+ def name1 =1
  echo "${name}"
  
  
