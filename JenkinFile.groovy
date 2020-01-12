@@ -21,15 +21,14 @@ stage('Starting')
 
 steps
  {
-  scripts{
-   
+  
 echo "Starting the project "
  echo "${env.name}"
  echo "${awesomeVersion}"
- def name1 =1
- echo "${name1}"
  
-  }
+ 
+ 
+  
 
 
  }
