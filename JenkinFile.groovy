@@ -1,6 +1,6 @@
 
 
-#!/usr/bin/env groovy
+
 
 pipeline
 
@@ -26,8 +26,8 @@ steps
 
 echo "Starting the project "
  echo "${env.name}"
- def x = env.name
- echo '$x'
+ def x = 1
+ echo 'x'
  
 
 
