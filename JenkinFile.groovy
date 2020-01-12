@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def awesomeVersion = ${env.name}
+def awesomeVersion = env.name
 
 pipeline
 
