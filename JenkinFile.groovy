@@ -25,8 +25,8 @@ steps
 
 echo "Starting the project "
  echo "${env.name}"
- String x = env.name
- echo "$x"
+ x = env.name
+ echo '$x'
  
 
 
