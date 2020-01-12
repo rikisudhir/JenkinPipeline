@@ -22,7 +22,7 @@ steps
 
 echo "Starting the project "
  echo "${env.name}"
- def x = 1
+ x = 1
  echo 'x'
  
 
