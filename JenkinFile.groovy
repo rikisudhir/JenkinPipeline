@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def awesomeVersion = env.name
-def name
+def a =''
 
 pipeline
 
@@ -25,6 +25,8 @@ steps
 echo "Starting the project "
  echo "${env.name}"
  echo "${awesomeVersion}"
+ a = "persistent"
+ echo ${a}
  
  
  
