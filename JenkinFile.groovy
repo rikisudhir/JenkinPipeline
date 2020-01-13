@@ -21,13 +21,13 @@ stage('Starting')
 
 steps
  {
-  
+  script{
 echo "Starting the project "
  echo "${env.name}"
  echo "${awesomeVersion}"
  a = "persistent"
  echo "${a}"
- 
+  }
  
  
   
