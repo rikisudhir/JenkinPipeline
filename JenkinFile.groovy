@@ -2,6 +2,7 @@
 
 def awesomeVersion = env.name
 def a =''
+def b=''
 
 pipeline
 
@@ -27,6 +28,8 @@ echo "Starting the project "
  echo "${awesomeVersion}"
  a = "persistent"
  echo "${a}"
+ b= env.name
+ echo "${b}"
   }
  
  
