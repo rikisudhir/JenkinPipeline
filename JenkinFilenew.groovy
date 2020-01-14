@@ -4,8 +4,8 @@
 library 'pipeline_common'
 
 def function_name = env.function
-def firstnumber =env.number1
-def secondnumber =env.number2
+def firstnumber =env.number1.toInteger()
+def secondnumber =env.number2.toInteger()
 def result =''
 
 pipeline
