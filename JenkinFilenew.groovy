@@ -1,66 +1,54 @@
 #!/usr/bin/env groovy
 
-def awesomeVersion = env.name
-def a =''
-def b=''
+//Load Jenkins pipeline common library
+library 'pipeline_common'
+
+def function_name = env.function
+def firstnumber =env.number1
+def secondnumber =env.number2
+def result =''
 
 pipeline
-
 {
-
 agent any
 
-
-
 stages
-
 {
-
 stage('Starting')
-
 {
-
 steps
  {
   script{
-echo "Starting the project "
- echo "${env.name}"
- echo "${awesomeVersion}"
- a = "persistent"
- echo "${a}"
- b= env.name
- echo "${b}"
+   echo "Starting the project "
+   echo "${function_name}"  
+   echo "${firstnumber}
+   echo "${secondnumber}
+
   }
- 
- 
+  }
+}
+
+stage('Doing calulcation')
+
+{
+
+steps{
+ script{
+echo 'doing the calculation based on input '
   
-
-
- }
-
-
-}
-
-stage('Addition')
-
-{
-
-steps{
-
-echo 'doing addition'
-
-}
-
-
-}
-
-stage('Substration')
-
-{
-
-steps{
-
-echo 'doing substration'
+  if (function_name=='addition'){
+    result = pipeline_common.addition(firstnumber,secondnumber)
+   echo "${result}
+  }else if (function_name=='substraction'){
+    result = pipeline_common.substraction(firstnumber,secondnumber)
+    echo "${result}
+  }else if (function_name=='multiplication'){
+    result = pipeline_common.multiplication(firstnumber,secondnumber)
+    echo "${result}
+  }else if (function_name=='division')
+    result = pipeline_common.multiplication(firstnumber,secondnumber)
+    echo "${result}
+   }
 
 }
 
@@ -68,27 +56,15 @@ echo 'doing substration'
 }
 
 
-stage('Multiplication')
 
-{
-
-steps{
-
-echo 'doing multiplication'
-
-}
-
-
-}
-
-stage('Division ')
+stage('Ending ')
 
 {
 
 
 steps{
 
-echo 'Doing Division'
+echo 'ending the pipe line'
 
 }
 
