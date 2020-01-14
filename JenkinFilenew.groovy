@@ -21,8 +21,8 @@ steps
   script{
    echo "Starting the project "
    echo "${function_name}"  
-   echo "${firstnumber}
-   echo "${secondnumber}
+   echo "${firstnumber}"
+   echo "${secondnumber}"
 
   }
   }
@@ -38,16 +38,16 @@ echo 'doing the calculation based on input '
   
   if (function_name=='addition'){
     result = pipeline_common.addition(firstnumber,secondnumber)
-   echo "${result}
+   echo "${result}"
   }else if (function_name=='substraction'){
     result = pipeline_common.substraction(firstnumber,secondnumber)
-    echo "${result}
+    echo "${result}"
   }else if (function_name=='multiplication'){
     result = pipeline_common.multiplication(firstnumber,secondnumber)
-    echo "${result}
+    echo "${result}"
   }else if (function_name=='division')
     result = pipeline_common.multiplication(firstnumber,secondnumber)
-    echo "${result}
+    echo "${result}"
    }
 
 }
