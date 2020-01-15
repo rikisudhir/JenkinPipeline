@@ -13,6 +13,7 @@ JENKINS_NODE = 'master'
 node( JENKINS_NODE ) { timestamps {
    SANDBOX=pwd()
 }
+                     }
 
 pipeline
 {
