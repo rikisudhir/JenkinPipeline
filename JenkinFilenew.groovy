@@ -16,6 +16,11 @@ node( JENKINS_NODE ) { timestamps {
 }
                      }
 
+def buildActions = ['<strong>Execution Summary</strong>']
+buildActions = buildActions << "<strong>Source IP :</strong>" + "10.1.2.2"
+buildActions = buildActions << "<strong>Destination IP :</strong>" + "10.4.5.7"
+pipeline_common.setBuildDescription(buildActions.join('<br />'))
+
 pipeline
 {
 agent any
