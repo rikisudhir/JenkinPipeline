@@ -7,6 +7,7 @@ def function_name = env.function
 def firstnumber =env.number1.toInteger()
 def secondnumber =env.number2.toInteger()
 def result =''
+SANDBOX=pwd()
 
 pipeline
 {
@@ -23,6 +24,7 @@ steps
    echo "${function_name}"  
    echo "${firstnumber}"
    echo "${secondnumber}"
+   echo "${SANDBOX}"
 
   }
   }
