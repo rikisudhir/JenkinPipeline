@@ -7,7 +7,12 @@ def function_name = env.function
 def firstnumber =env.number1.toInteger()
 def secondnumber =env.number2.toInteger()
 def result =''
-SANDBOX=pwd()
+JENKINS_NODE = 'master'
+
+
+node( JENKINS_NODE ) { timestamps {
+   SANDBOX=pwd()
+}
 
 pipeline
 {
