@@ -39,10 +39,10 @@ steps
    echo "${firstnumber}"
    echo "${secondnumber}"
    echo "${SANDBOX}"
-  sh  "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 22 sudhir@172.17.238.182 'hostname && cat /etc/os-release'"
-   def OSDistribution=sh (script: "sshpass -p 123456 ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 8080 sudhir@172.17.238.182 cat /etc/os-release | grep -w 'ID=' | ",returnStdout: true)
+  //sh  "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 22 sudhir@172.17.238.182 'hostname && cat /etc/os-release'"
+   //def OSDistribution=sh (script: "sshpass -p 123456 ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 8080 sudhir@172.17.238.182 cat /etc/os-release | grep -w 'ID=' | ",returnStdout: true)
 	//OSVersion=sh (script: "sshpass -p ${env.TARGET_MACHINE_PWD} ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${sshPort} root@${env.TARGET_MACHINE} cat /etc/os-release | grep -w 'VERSION_ID=' | cut -d '=' -f2 | tr -d '\"' ",returnStdout: true)
-   echo "${OSDistribution}"
+   //echo "${OSDistribution}"
   }
   }
 }
